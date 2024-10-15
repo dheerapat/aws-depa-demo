@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expose Gradio port (default 7860)
-EXPOSE 7860
+EXPOSE 8000
 
 # Start the Gradio app using command line arguments
-CMD ["gradio", "main.py"]
+CMD ["fastapi", "run", "server.py"]

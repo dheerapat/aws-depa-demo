@@ -117,5 +117,3 @@ with gr.Blocks(title="✈️ Bangkok Airways's Travel Assistance | depa x AWS Ge
         return "", chat_history
 
     msg.submit(respond, [msg, chatbot, questions], [msg, chatbot])
-
-demo.launch()
